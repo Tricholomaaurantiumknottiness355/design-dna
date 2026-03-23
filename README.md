@@ -1,6 +1,8 @@
 <h1 align="center">design-dna</h1>
 
-![Example: extract the visual DNA from a reference (thekrakentraining.com) and apply it to your own content (deno.com).](docs/example-style-transfer.png)
+![example](https://github.com/user-attachments/assets/77e9e02e-35a4-4d65-a402-dc6f9b35ed6e)
+
+https://github.com/user-attachments/assets/00e0a28d-42ce-4a08-a0c0-1ecf8b9f7e97
 
 English | [中文](README.zh-CN.md)
 
