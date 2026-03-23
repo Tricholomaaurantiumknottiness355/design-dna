@@ -26,23 +26,20 @@
 
 ## 安装
 
-需要本机已安装 [Node.js](https://nodejs.org/)（用于 `npx`）。将本仓库发布到 GitHub 后，假设仓库为 `OWNER/REPO`：
+需要本机已安装 [Node.js](https://nodejs.org/)（用于 `npx`）。**本仓库：** [github.com/zanwei/design-dna](https://github.com/zanwei/design-dna)。
 
 ```bash
 # 安装到 CLI 检测到的智能体（交互式）
-npx skills add OWNER/REPO
-
-# 示例：仓库为 github.com/your-username/design-dna
-npx skills add your-username/design-dna
+npx skills add zanwei/design-dna
 
 # 仅 Cursor、非交互、安装到用户全局目录
-npx skills add your-username/design-dna -a cursor -g -y
+npx skills add zanwei/design-dna -a cursor -g -y
 ```
 
 **只列出仓库内技能、不安装：**
 
 ```bash
-npx skills add https://github.com/OWNER/REPO --list
+npx skills add https://github.com/zanwei/design-dna --list
 ```
 
 **从本地路径安装：**

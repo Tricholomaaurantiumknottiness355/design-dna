@@ -26,23 +26,20 @@ Phases can be used alone or chained (e.g. analyze → generate).
 
 ## Installation
 
-Requires [Node.js](https://nodejs.org/) (for `npx`). After you publish this repo to GitHub under `OWNER/REPO`:
+Requires [Node.js](https://nodejs.org/) (for `npx`). **Repository:** [github.com/zanwei/design-dna](https://github.com/zanwei/design-dna).
 
 ```bash
 # Install into detected agents (interactive)
-npx skills add OWNER/REPO
-
-# Example once your repo is github.com/your-username/design-dna
-npx skills add your-username/design-dna
+npx skills add zanwei/design-dna
 
 # Cursor only, non-interactive, global (user-wide) install
-npx skills add your-username/design-dna -a cursor -g -y
+npx skills add zanwei/design-dna -a cursor -g -y
 ```
 
 **Preview skills in the repo without installing:**
 
 ```bash
-npx skills add https://github.com/OWNER/REPO --list
+npx skills add https://github.com/zanwei/design-dna --list
 ```
 
 **Install from a local clone:**
