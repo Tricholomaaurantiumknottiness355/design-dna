@@ -7,7 +7,10 @@ https://github.com/user-attachments/assets/00e0a28d-42ce-4a08-a0c0-1ecf8b9f7e97
 
 
 <h3 align="center">Other cases</h3>
-https://github.com/user-attachments/assets/01e1d87a-73fb-4c19-84c2-4c685e0096b4
+
+https://github.com/user-attachments/assets/80793608-930d-42ca-951f-eb21ac188d54
+
+https://github.com/user-attachments/assets/cd4cba94-cd2c-480f-8efa-4ac86e00ae1f
 
 English | [中文](README.zh-CN.md)
 
