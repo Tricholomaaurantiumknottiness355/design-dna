@@ -2,10 +2,11 @@
 
 ![example](https://github.com/user-attachments/assets/77e9e02e-35a4-4d65-a402-dc6f9b35ed6e)
 
-#### Cases
 
 https://github.com/user-attachments/assets/00e0a28d-42ce-4a08-a0c0-1ecf8b9f7e97
 
+
+<h3 align="center">Other cases</h3>
 https://github.com/user-attachments/assets/01e1d87a-73fb-4c19-84c2-4c685e0096b4
 
 English | [中文](README.zh-CN.md)
