@@ -1,6 +1,8 @@
 # design-dna
 
-![Example: extract the visual DNA from a reference (thekrakentraining.com) and apply it to your own content (deno.com).](docs/example-style-transfer.png)
+![example](https://github.com/user-attachments/assets/91f39d38-1682-4fe6-ac8b-3ca9a920a5d0)
+
+https://github.com/user-attachments/assets/87aa0fc7-96c0-4e9b-a22f-7d07d22e07f2
 
 English | [中文](README.zh-CN.md)
 
