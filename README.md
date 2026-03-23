@@ -1,8 +1,6 @@
 <h1 align="center">design-dna</h1>
 
-![example](https://github.com/user-attachments/assets/91f39d38-1682-4fe6-ac8b-3ca9a920a5d0)
-
-https://github.com/user-attachments/assets/87aa0fc7-96c0-4e9b-a22f-7d07d22e07f2
+![Example: extract the visual DNA from a reference (thekrakentraining.com) and apply it to your own content (deno.com).](docs/example-style-transfer.png)
 
 English | [中文](README.zh-CN.md)
 
@@ -60,13 +58,30 @@ The skill drives a **three-phase** workflow:
 
 Phases can be used alone or chained (e.g. Analyze → Generate).
 
-### Recommended Workflow
+## How It Works
 
-1. **Curate references** — Gather screenshots, images, or live URLs of designs whose visual identity you want to replicate.
-2. **Extract DNA** — Feed those references to the skill. It analyzes every visual property and outputs a quantified Design DNA JSON covering all three dimensions.
-3. **Generate from DNA** — Provide the DNA JSON together with your own content. The agent produces pixel-accurate implementations that faithfully reproduce the original design language.
+```
+Reference designs                    Design DNA JSON                     Your final output
+(screenshots, URLs, images)          (quantified spec)                   (faithful implementation)
 
-This turns subjective "make it look like that" requests into a **reproducible, version-controllable specification** that any agent can consume consistently.
+  ┌──────────────┐     Analyze      ┌──────────────┐     Generate      ┌──────────────┐
+  │              │ ──────────────►  │              │ ──────────────►  │              │
+  │  Any design  │   extract every  │  Structured  │   apply DNA to   │  Production  │
+  │  you admire  │   visual property│  JSON profile │   your content   │  ready UI    │
+  │              │ ──────────────►  │              │ ──────────────►  │              │
+  └──────────────┘                  └──────────────┘                  └──────────────┘
+                                           │
+                                     save / reuse /
+                                     version control
+```
+
+**Step 1 — Curate references.** Collect screenshots, images, or live URLs of designs whose visual identity you want to capture. Multiple references can be combined; the skill identifies dominant patterns and notes variants.
+
+**Step 2 — Extract DNA.** Feed the references to the agent. It inspects every visual property across all three dimensions and outputs a complete, quantified Design DNA JSON — no empty fields, no guesswork. This JSON becomes a portable, reusable design specification.
+
+**Step 3 — Generate from DNA.** Provide the DNA JSON together with your own content. The agent produces implementations that faithfully reproduce the original design language while adapting to your material.
+
+The DNA JSON is the key artifact. Once extracted, it can be **committed to version control**, **shared across teams**, **reused across projects**, and **iteratively refined** — turning subjective "make it look like that site" into a precise, reproducible specification that any agent can consume.
 
 ## Compatibility
 
