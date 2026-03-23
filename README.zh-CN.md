@@ -1,4 +1,4 @@
-# design-dna
+<h1 align="center">design-dna</h1>
 
 ![示例：从参考站点（thekrakentraining.com）提取视觉 DNA，并应用到自有内容（deno.com）。](docs/example-style-transfer.png)
 

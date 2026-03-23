@@ -1,4 +1,4 @@
-# design-dna
+<h1 align="center">design-dna</h1>
 
 ![example](https://github.com/user-attachments/assets/91f39d38-1682-4fe6-ac8b-3ca9a920a5d0)
 
