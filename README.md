@@ -91,9 +91,8 @@ flowchart LR
 
 The DNA JSON is the key artifact. Once extracted, it can be **committed to version control**, **shared across teams**, **reused across projects**, and **iteratively refined** — turning subjective "make it look like that site" into a precise, reproducible specification that any agent can consume.
 
-### Refining visual richness
-
-If the first implementation still feels visually thin or under-detailed relative to your references, run an explicit **polish pass**: re-share the **same URLs or screenshots** and ask the agent to **audit fine-grained UI details**—hierarchy, ornamentation, typographic rhythm, motion, and surface treatments—against the reference, then **fold those findings back** into the current output. This iteration closes the gap between a workable first draft and a reference-faithful, visually dense result without restarting from zero.
+> [!TIP]
+> **Refining visual richness.** If the first pass still feels visually thin or under-detailed next to your references, run a deliberate **polish iteration**: re-attach the **same URLs or screenshots** and ask the agent to **review fine-grained UI**—hierarchy, ornamentation, typographic rhythm, motion, and surface treatments—against the reference, then **merge those refinements** into the current implementation. This narrows the gap between a workable draft and a reference-faithful, visually rich result without starting over.
 
 ## Compatibility
 
