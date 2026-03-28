@@ -1,5 +1,9 @@
 <h1 align="center">design-dna</h1>
 
+English | [中文](README.zh-CN.md) | [日本語](README.ja.md)
+
+An agent skill for extracting, structuring, and applying visual design identity as machine-readable "Design DNA" across three dimensions: design tokens, qualitative style, and visual effects.
+
 ![example](https://github.com/user-attachments/assets/77e9e02e-35a4-4d65-a402-dc6f9b35ed6e)
 
 
@@ -11,10 +15,6 @@ https://github.com/user-attachments/assets/00e0a28d-42ce-4a08-a0c0-1ecf8b9f7e97
 https://github.com/user-attachments/assets/80793608-930d-42ca-951f-eb21ac188d54
 
 https://github.com/user-attachments/assets/cd4cba94-cd2c-480f-8efa-4ac86e00ae1f
-
-English | [中文](README.zh-CN.md) | [日本語](README.ja.md)
-
-An agent skill for extracting, structuring, and applying visual design identity as machine-readable "Design DNA" across three dimensions: design tokens, qualitative style, and visual effects.
 
 ## Prerequisites
 

@@ -1,10 +1,10 @@
 <h1 align="center">design-dna</h1>
 
-![例：参考サイト（thekrakentraining.com）から視覚的 DNA を抽出し、自前のコンテンツ（deno.com）に適用。](docs/example-style-transfer.png)
-
 [English](README.md) | [中文](README.zh-CN.md) | 日本語
 
 コーディングエージェント向けのスキルで、視覚的なデザインアイデンティティ（Design DNA）を抽出・構造化・適用します。三つの次元をカバーします：デザインシステム（測定可能なトークン）、デザインスタイル（定性的な印象）、ビジュアルエフェクト。
+
+![例：参考サイト（thekrakentraining.com）から視覚的 DNA を抽出し、自前のコンテンツ（deno.com）に適用。](docs/example-style-transfer.png)
 
 ## 前提条件
 
