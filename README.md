@@ -12,7 +12,7 @@ https://github.com/user-attachments/assets/80793608-930d-42ca-951f-eb21ac188d54
 
 https://github.com/user-attachments/assets/cd4cba94-cd2c-480f-8efa-4ac86e00ae1f
 
-English | [中文](README.zh-CN.md)
+English | [中文](README.zh-CN.md) | [日本語](README.ja.md)
 
 An agent skill for extracting, structuring, and applying visual design identity as machine-readable "Design DNA" across three dimensions: design tokens, qualitative style, and visual effects.
 
