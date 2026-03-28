@@ -1,6 +1,8 @@
 <h1 align="center">design-dna</h1>
 
-[English](README.md) | 中文 | [日本語](README.ja.md)
+<p align="center">
+<a href="README.md">English</a> | 中文 | <a href="README.ja.md">日本語</a> | <a href="README.ko.md">한국어</a> | <a href="README.es.md">Español</a> | <a href="README.zh-TW.md">繁體中文</a>
+</p>
 
 面向编程智能体的技能，用于提取、结构化并应用视觉设计身份（Design DNA），覆盖三个维度：设计系统（可度量 token）、设计风格（定性感受）与视觉特效。
 

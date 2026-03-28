@@ -1,6 +1,8 @@
 <h1 align="center">design-dna</h1>
 
-[English](README.md) | [中文](README.zh-CN.md) | 日本語
+<p align="center">
+<a href="README.md">English</a> | <a href="README.zh-CN.md">中文</a> | 日本語 | <a href="README.ko.md">한국어</a> | <a href="README.es.md">Español</a> | <a href="README.zh-TW.md">繁體中文</a>
+</p>
 
 コーディングエージェント向けのスキルで、視覚的なデザインアイデンティティ（Design DNA）を抽出・構造化・適用します。三つの次元をカバーします：デザインシステム（測定可能なトークン）、デザインスタイル（定性的な印象）、ビジュアルエフェクト。
 

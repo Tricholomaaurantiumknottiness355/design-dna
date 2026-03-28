@@ -1,6 +1,8 @@
 <h1 align="center">design-dna</h1>
 
-English | [中文](README.zh-CN.md) | [日本語](README.ja.md)
+<p align="center">
+English | <a href="README.zh-CN.md">中文</a> | <a href="README.ja.md">日本語</a> | <a href="README.ko.md">한국어</a> | <a href="README.es.md">Español</a> | <a href="README.zh-TW.md">繁體中文</a>
+</p>
 
 An agent skill for extracting, structuring, and applying visual design identity as machine-readable "Design DNA" across three dimensions: design tokens, qualitative style, and visual effects.
 
